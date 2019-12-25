@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342CBA693FD24B26EE24637A /* Pods_BleChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B18602FA1223E7FB25E44A /* Pods_BleChat.framework */; };
+		431477E9239D7CB300457DAE /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431477E8239D7CB300457DAE /* KeyboardObserver.swift */; };
+		43501BA623A4F5F7009D8B7E /* AvatarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BA523A4F5F6009D8B7E /* AvatarPickerView.swift */; };
+		43501BA823A8A1AA009D8B7E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BA723A8A1AA009D8B7E /* User.swift */; };
+		43501BAA23A8B00C009D8B7E /* Streams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BA923A8B00C009D8B7E /* Streams.swift */; };
+		43501BAC23AA8BC5009D8B7E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 43501BAB23AA8BC5009D8B7E /* Podfile */; };
+		43501BAE23AA8D7F009D8B7E /* BleConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BAD23AA8D7F009D8B7E /* BleConnector.swift */; };
+		43501BB223AA93E7009D8B7E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BB123AA93E7009D8B7E /* Item.swift */; };
+		43501BB423B0A10D009D8B7E /* UIDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BB323B0A10D009D8B7E /* UIDataAdapter.swift */; };
+		43501BB623B0B66B009D8B7E /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BB523B0B66B009D8B7E /* ItemsManager.swift */; };
+		43501BB823B1F9B9009D8B7E /* ChatViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BB723B1F9B9009D8B7E /* ChatViewRow.swift */; };
+		435D48B023959D6E00E4902B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D48AF23959D6E00E4902B /* AppDelegate.swift */; };
+		435D48B223959D6E00E4902B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D48B123959D6E00E4902B /* SceneDelegate.swift */; };
+		435D48B623959D7300E4902B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D48B523959D7300E4902B /* Assets.xcassets */; };
+		435D48B923959D7300E4902B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D48B823959D7300E4902B /* Preview Assets.xcassets */; };
+		435D48BC23959D7300E4902B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435D48BA23959D7300E4902B /* LaunchScreen.storyboard */; };
+		435D48C423959DC000E4902B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D48C323959DC000E4902B /* MenuView.swift */; };
+		435D48C723959EC700E4902B /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 435D48C623959EC700E4902B /* channels.json */; };
+		435D48DE2395A67500E4902B /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D48DD2395A67500E4902B /* Channel.swift */; };
+		435D48E02396D20B00E4902B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D48DF2396D20B00E4902B /* ChatView.swift */; };
+		43930F3C239FF68B00CD0DBA /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43930F3B239FF68B00CD0DBA /* ImagePickerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C5FA1D18D8D8C634D71F049 /* Pods-BleChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleChat.debug.xcconfig"; path = "Target Support Files/Pods-BleChat/Pods-BleChat.debug.xcconfig"; sourceTree = "<group>"; };
+		39B18602FA1223E7FB25E44A /* Pods_BleChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BleChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431477E8239D7CB300457DAE /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		43501BA523A4F5F6009D8B7E /* AvatarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerView.swift; sourceTree = "<group>"; };
+		43501BA723A8A1AA009D8B7E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		43501BA923A8B00C009D8B7E /* Streams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streams.swift; sourceTree = "<group>"; };
+		43501BAB23AA8BC5009D8B7E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		43501BAD23AA8D7F009D8B7E /* BleConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleConnector.swift; sourceTree = "<group>"; };
+		43501BB123AA93E7009D8B7E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		43501BB323B0A10D009D8B7E /* UIDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDataAdapter.swift; sourceTree = "<group>"; };
+		43501BB523B0B66B009D8B7E /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		43501BB723B1F9B9009D8B7E /* ChatViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewRow.swift; sourceTree = "<group>"; };
+		435D48AC23959D6E00E4902B /* BleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		435D48AF23959D6E00E4902B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		435D48B123959D6E00E4902B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		435D48B523959D7300E4902B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		435D48B823959D7300E4902B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		435D48BB23959D7300E4902B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		435D48BD23959D7300E4902B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435D48C323959DC000E4902B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		435D48C623959EC700E4902B /* channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
+		435D48DD2395A67500E4902B /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		435D48DF2396D20B00E4902B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		43930F3B239FF68B00CD0DBA /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		CB94E1BB99FBD4AE4CB63B9F /* Pods-BleChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleChat.release.xcconfig"; path = "Target Support Files/Pods-BleChat/Pods-BleChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		435D48A923959D6E00E4902B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342CBA693FD24B26EE24637A /* Pods_BleChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE0E6CE5A4788561E451181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39B18602FA1223E7FB25E44A /* Pods_BleChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		431477E6239D7A7300457DAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				435D48C323959DC000E4902B /* MenuView.swift */,
+				435D48DF2396D20B00E4902B /* ChatView.swift */,
+				43501BB723B1F9B9009D8B7E /* ChatViewRow.swift */,
+				43930F3B239FF68B00CD0DBA /* ImagePickerView.swift */,
+				43501BA523A4F5F6009D8B7E /* AvatarPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		431477E7239D7BC600457DAE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				431477E8239D7CB300457DAE /* KeyboardObserver.swift */,
+				43501BAD23AA8D7F009D8B7E /* BleConnector.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		435D48A323959D6E00E4902B = {
+			isa = PBXGroup;
+			children = (
+				43501BAB23AA8BC5009D8B7E /* Podfile */,
+				435D48AE23959D6E00E4902B /* BleChat */,
+				435D48AD23959D6E00E4902B /* Products */,
+				94CD403DCBB2613140194247 /* Pods */,
+				2EE0E6CE5A4788561E451181 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		435D48AD23959D6E00E4902B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				435D48AC23959D6E00E4902B /* BleChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		435D48AE23959D6E00E4902B /* BleChat */ = {
+			isa = PBXGroup;
+			children = (
+				435D48DC2395A61A00E4902B /* Data */,
+				435D48C523959E4300E4902B /* Resources */,
+				431477E7239D7BC600457DAE /* Helpers */,
+				431477E6239D7A7300457DAE /* Views */,
+				435D48AF23959D6E00E4902B /* AppDelegate.swift */,
+				435D48B123959D6E00E4902B /* SceneDelegate.swift */,
+				435D48BD23959D7300E4902B /* Info.plist */,
+				435D48B723959D7300E4902B /* Preview Content */,
+			);
+			path = BleChat;
+			sourceTree = "<group>";
+		};
+		435D48B723959D7300E4902B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				435D48B823959D7300E4902B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		435D48C523959E4300E4902B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				435D48C623959EC700E4902B /* channels.json */,
+				435D48B523959D7300E4902B /* Assets.xcassets */,
+				435D48BA23959D7300E4902B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		435D48DC2395A61A00E4902B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				43501BB523B0B66B009D8B7E /* ItemsManager.swift */,
+				43501BB323B0A10D009D8B7E /* UIDataAdapter.swift */,
+				435D48DD2395A67500E4902B /* Channel.swift */,
+				43501BA723A8A1AA009D8B7E /* User.swift */,
+				43501BB123AA93E7009D8B7E /* Item.swift */,
+				43501BA923A8B00C009D8B7E /* Streams.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		94CD403DCBB2613140194247 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C5FA1D18D8D8C634D71F049 /* Pods-BleChat.debug.xcconfig */,
+				CB94E1BB99FBD4AE4CB63B9F /* Pods-BleChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		435D48AB23959D6E00E4902B /* BleChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435D48C023959D7300E4902B /* Build configuration list for PBXNativeTarget "BleChat" */;
+			buildPhases = (
+				B0777A9E525971E57DF46B36 /* [CP] Check Pods Manifest.lock */,
+				435D48A823959D6E00E4902B /* Sources */,
+				435D48A923959D6E00E4902B /* Frameworks */,
+				435D48AA23959D6E00E4902B /* Resources */,
+				6D7FA6A102E81005425360B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BleChat;
+			productName = BleChat;
+			productReference = 435D48AC23959D6E00E4902B /* BleChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		435D48A423959D6E00E4902B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = JJW;
+				TargetAttributes = {
+					435D48AB23959D6E00E4902B = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 435D48A723959D6E00E4902B /* Build configuration list for PBXProject "BleChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 435D48A323959D6E00E4902B;
+			productRefGroup = 435D48AD23959D6E00E4902B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				435D48AB23959D6E00E4902B /* BleChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		435D48AA23959D6E00E4902B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43501BAC23AA8BC5009D8B7E /* Podfile in Resources */,
+				435D48BC23959D7300E4902B /* LaunchScreen.storyboard in Resources */,
+				435D48C723959EC700E4902B /* channels.json in Resources */,
+				435D48B923959D7300E4902B /* Preview Assets.xcassets in Resources */,
+				435D48B623959D7300E4902B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D7FA6A102E81005425360B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BleChat/Pods-BleChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BleChat/Pods-BleChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BleChat/Pods-BleChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0777A9E525971E57DF46B36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BleChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		435D48A823959D6E00E4902B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43501BAE23AA8D7F009D8B7E /* BleConnector.swift in Sources */,
+				43501BB623B0B66B009D8B7E /* ItemsManager.swift in Sources */,
+				43501BB423B0A10D009D8B7E /* UIDataAdapter.swift in Sources */,
+				435D48B023959D6E00E4902B /* AppDelegate.swift in Sources */,
+				43501BA623A4F5F7009D8B7E /* AvatarPickerView.swift in Sources */,
+				435D48DE2395A67500E4902B /* Channel.swift in Sources */,
+				435D48E02396D20B00E4902B /* ChatView.swift in Sources */,
+				435D48C423959DC000E4902B /* MenuView.swift in Sources */,
+				43501BB223AA93E7009D8B7E /* Item.swift in Sources */,
+				43501BA823A8A1AA009D8B7E /* User.swift in Sources */,
+				43930F3C239FF68B00CD0DBA /* ImagePickerView.swift in Sources */,
+				431477E9239D7CB300457DAE /* KeyboardObserver.swift in Sources */,
+				435D48B223959D6E00E4902B /* SceneDelegate.swift in Sources */,
+				43501BAA23A8B00C009D8B7E /* Streams.swift in Sources */,
+				43501BB823B1F9B9009D8B7E /* ChatViewRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		435D48BA23959D7300E4902B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				435D48BB23959D7300E4902B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		435D48BE23959D7300E4902B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		435D48BF23959D7300E4902B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		435D48C123959D7300E4902B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5FA1D18D8D8C634D71F049 /* Pods-BleChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"BleChat/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BleChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.airfrance-klm.opensource.BleChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		435D48C223959D7300E4902B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB94E1BB99FBD4AE4CB63B9F /* Pods-BleChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"BleChat/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BleChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.airfrance-klm.opensource.BleChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		435D48A723959D6E00E4902B /* Build configuration list for PBXProject "BleChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435D48BE23959D7300E4902B /* Debug */,
+				435D48BF23959D7300E4902B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435D48C023959D7300E4902B /* Build configuration list for PBXNativeTarget "BleChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435D48C123959D7300E4902B /* Debug */,
+				435D48C223959D7300E4902B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 435D48A423959D6E00E4902B /* Project object */;
+}
