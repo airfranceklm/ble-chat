@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		342CBA693FD24B26EE24637A /* Pods_BleChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B18602FA1223E7FB25E44A /* Pods_BleChat.framework */; };
 		431477E9239D7CB300457DAE /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431477E8239D7CB300457DAE /* KeyboardObserver.swift */; };
 		43501BA623A4F5F7009D8B7E /* AvatarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BA523A4F5F6009D8B7E /* AvatarPickerView.swift */; };
 		43501BA823A8A1AA009D8B7E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43501BA723A8A1AA009D8B7E /* User.swift */; };
@@ -28,11 +27,11 @@
 		435D48DE2395A67500E4902B /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D48DD2395A67500E4902B /* Channel.swift */; };
 		435D48E02396D20B00E4902B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D48DF2396D20B00E4902B /* ChatView.swift */; };
 		43930F3C239FF68B00CD0DBA /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43930F3B239FF68B00CD0DBA /* ImagePickerView.swift */; };
+		EBCF08736C3A4A1172A50433 /* libPods-BleChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE287F0145059B6ABE125699 /* libPods-BleChat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C5FA1D18D8D8C634D71F049 /* Pods-BleChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleChat.debug.xcconfig"; path = "Target Support Files/Pods-BleChat/Pods-BleChat.debug.xcconfig"; sourceTree = "<group>"; };
-		39B18602FA1223E7FB25E44A /* Pods_BleChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BleChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431477E8239D7CB300457DAE /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		43501BA523A4F5F6009D8B7E /* AvatarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerView.swift; sourceTree = "<group>"; };
 		43501BA723A8A1AA009D8B7E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		435D48DD2395A67500E4902B /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		435D48DF2396D20B00E4902B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		43930F3B239FF68B00CD0DBA /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		AE287F0145059B6ABE125699 /* libPods-BleChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BleChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB94E1BB99FBD4AE4CB63B9F /* Pods-BleChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleChat.release.xcconfig"; path = "Target Support Files/Pods-BleChat/Pods-BleChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				342CBA693FD24B26EE24637A /* Pods_BleChat.framework in Frameworks */,
+				EBCF08736C3A4A1172A50433 /* libPods-BleChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 		2EE0E6CE5A4788561E451181 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				39B18602FA1223E7FB25E44A /* Pods_BleChat.framework */,
+				AE287F0145059B6ABE125699 /* libPods-BleChat.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,7 +184,6 @@
 				435D48A823959D6E00E4902B /* Sources */,
 				435D48A923959D6E00E4902B /* Frameworks */,
 				435D48AA23959D6E00E4902B /* Resources */,
-				6D7FA6A102E81005425360B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,23 +243,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D7FA6A102E81005425360B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BleChat/Pods-BleChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BleChat/Pods-BleChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BleChat/Pods-BleChat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B0777A9E525971E57DF46B36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,9 +423,10 @@
 			baseConfigurationReference = 2C5FA1D18D8D8C634D71F049 /* Pods-BleChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BleChat/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UE8AAX7G56;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BleChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -451,7 +434,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.airfrance-klm.opensource.BleChat";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jjw.opensource.BleChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -464,9 +447,10 @@
 			baseConfigurationReference = CB94E1BB99FBD4AE4CB63B9F /* Pods-BleChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BleChat/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UE8AAX7G56;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BleChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -474,7 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.airfrance-klm.opensource.BleChat";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jjw.opensource.BleChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

@@ -24,7 +24,7 @@ extension UnsignedInteger {
         let ump = UnsafeMutablePointer<UInt8>.allocate(capacity: MemoryLayout<Self>.size)
         let length = stream.read(ump, maxLength: MemoryLayout<Self>.size)
         
-        guard length != 0 else {
+        guard length > 0 else {
             return nil
         }
         
